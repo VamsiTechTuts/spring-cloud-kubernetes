@@ -1,6 +1,6 @@
 - hosts: localhost
   vars:
-    ansible_python_interpreter: '/usr/bin/python3'
+    ansible_python_interpreter: '/usr/bin/python2'
   tasks:
   - name: Deploy the service
     k8s:
