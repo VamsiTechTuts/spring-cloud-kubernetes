@@ -16,9 +16,6 @@ pipeline {
     }
     stages {
         stage('Git Checkout') {
-            when {
-				expression { params.action == 'create' }
-			}
             steps {
                 gitCheckout(
                     branch: "master",
@@ -27,9 +24,6 @@ pipeline {
             }
         }
         stage('Build Maven'){
-            when {
-				expression { params.action == 'create' }
-			}
     		steps {
         		dir("${params.AppName}") {
         			sh 'mvn clean package'
@@ -37,9 +31,6 @@ pipeline {
     		}
 	    }
 	    stage("Docker Build and Push") {
-	        when {
-				expression { params.action == 'create' }
-			}
 	        steps {
 	            dir("${params.AppName}") {
 	                dockerBuild ( "${params.ImageName}", "${params.docker_repo}" )
@@ -47,17 +38,11 @@ pipeline {
 	        }
 	    }
 	    stage("Docker CleanUP") {
-	        when {
-				expression { params.action == 'create' }
-			}
 	        steps {
 	            dockerCleanup ( "${params.ImageName}", "${params.docker_repo}" )
 			}
 		}
 	    stage ('Deploy') {
-	         when {
-				expression { params.action == 'create' }
-			}
             steps {
                 script{
                     dir("${params.AppName}") {
