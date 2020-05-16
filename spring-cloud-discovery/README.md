@@ -43,4 +43,4 @@ Now Goto Loadbalancer and check whether service comes Inservice or not, If it co
     
     http://a695c51e175054f9d9c1a966dce01e33-292728232.us-west-2.elb.amazonaws.com:8081/api/sample
 
-![2](https://user-images.githubusercontent.com/63221837/82123471-44f5f300-97b7-11ea-9d10-438cf9cc98a0.png)
+![1](https://user-images.githubusercontent.com/63221837/82123510-7cfd3600-97b7-11ea-8066-9c2a8f2ad83a.png)
