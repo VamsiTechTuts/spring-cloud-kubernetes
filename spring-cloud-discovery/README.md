@@ -40,4 +40,6 @@ Check Deployments, Pods and Services:
     kubectl get svc
     
 Now Goto Loadbalancer and check whether service comes Inservice or not, If it comes Inservice copy DNS Name of Loadbalancer and Give in WebUI
+    
+    http://a695c51e175054f9d9c1a966dce01e33-292728232.us-west-2.elb.amazonaws.com:8081/api/sample
 
