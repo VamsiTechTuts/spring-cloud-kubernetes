@@ -44,3 +44,8 @@ Now Goto Loadbalancer and check whether service comes Inservice or not, If it co
     http://a70a89c22e06f49f3ba2b3270e974e29-1311314938.us-west-2.elb.amazonaws.com:8080/home/data
     
 ![2](https://user-images.githubusercontent.com/63221837/82123471-44f5f300-97b7-11ea-9d10-438cf9cc98a0.png)
+
+Now we can cleanup by using below commands:
+--------
+    kubectl delete deploy kubernetes-configmap-reload
+    kubectl delete svc kubernetes-configmap-reload
