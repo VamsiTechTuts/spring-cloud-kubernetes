@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: kubernetes-configmap-reload
-          image: vamsitechtuts/spring-cloud-kubernetes:latest
+          image: vamsitechtuts/kubernetes-configmap-reload:latest
