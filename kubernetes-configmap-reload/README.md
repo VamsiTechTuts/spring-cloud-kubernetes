@@ -18,7 +18,7 @@ Build Maven Artifact:
  
 Build Docker image for Springboot Application
 --------------
-    docker build -t vamsitechtuts/spring-cloud-kubernetes .
+    docker build -t vamsitechtuts/kubernetes-configmap-reload .
   
 Docker login
 -------------
@@ -26,7 +26,7 @@ Docker login
     
 Push docker image to dockerhub
 -----------
-    docker push vamsitechtuts/spring-cloud-kubernetes
+    docker push vamsitechtuts/kubernetes-configmap-reload
     
 Deploy Spring Application:
 --------
